@@ -10,7 +10,6 @@ import (
 
 func FileServer(root http.FileSystem) http.Handler {
 	return &fileHandler{root}
-	return http.NotFoundHandler()
 }
 
 type fileHandler struct {
